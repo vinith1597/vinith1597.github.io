@@ -208,7 +208,7 @@ window.onload = function () {
   var hitButtonListenerElement = document.getElementById("hit");
   hitButtonListenerElement.onclick = function () {
     var totalPointsOfPlayer = sum(playerCards);
-    if (totalPointsOfPlayer >= 21) {
+    if (totalPointsOfPlayer > 21) {
       displayPlayerStatus("Already reached limit! do not HIT!!");
       return;
     }
